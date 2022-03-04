@@ -1,0 +1,38 @@
+<mat-sidenav-container fullscreen class="mat-container">
+    <mat-sidenav #sidenav mode="push">
+        <mat-toolbar class="toolbar toolbar-up">
+            <span class="toolbar__title">Hackathon Challenge </span>
+            <button mat-icon-button (click)="sidenav.toggle()">
+                <mat-icon class="menu-icon">
+                    menu
+                </mat-icon>
+            </button>
+            
+        </mat-toolbar>
+
+        <mat-nav-list (click)="sidenav.toggle()">
+            <a (click)="goToAdd()" mat-list-item>
+                <mat-icon mat-list-icon>account_circle</mat-icon>
+                Employ Information
+            </a>
+        </mat-nav-list>
+
+    </mat-sidenav>
+
+    <mat-toolbar class="toolbar-up">
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>
+                menu
+            </mat-icon>
+        </button>
+        <button (click)="mainPage()" mat-button>
+            Exit
+        </button>
+        
+    </mat-toolbar>
+    
+    <main class="container">
+        <router-outlet></router-outlet>
+
+    </main>
+</mat-sidenav-container>

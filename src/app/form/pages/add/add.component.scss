@@ -1,0 +1,15 @@
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+    background-color: rgb(241, 241, 241);
+    margin-top: 5rem;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    .form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        }
+}

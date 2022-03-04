@@ -1,0 +1,38 @@
+
+.container-list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 8rem;
+
+    img{
+        color: white;
+        font-weight: bold;
+        width: 15rem;
+        height: 15rem;
+    }
+
+    ul{
+        li{
+            list-style: none;
+
+
+            a{
+                text-decoration: none;
+                padding: 1rem;
+                border: 1px solid black;
+                border-radius: 1rem;
+                background-color: rgb(240, 159, 9);
+                color: white;
+                font-size: 1.2rem;
+
+            }
+            a:hover{
+                background-color: rgb(247, 172, 32);
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,60 @@
+
+<div class="container">
+    <h1>Employee Information</h1>
+    <hr>
+    <br>
+    <form class="form" [formGroup]="form">
+      <mat-form-field appearance="fill">
+        <mat-label>Employer</mat-label>
+        <input matInput formControlName="employ" />
+      </mat-form-field>
+    
+      <mat-form-field appearance="fill">
+        <mat-label>LastName</mat-label>
+        <input matInput formControlName="lastName" />
+      </mat-form-field>
+    
+      <mat-form-field appearance="fill">
+        <mat-label>BirthPlace</mat-label>
+        <input matInput formControlName="birthPlace" />
+      </mat-form-field>
+    
+      <mat-form-field appearance="fill">
+        <mat-label>BirthDay</mat-label>
+        <input matInput [matDatepicker]="picker" [max]="maxDate" [min]="minDate" >
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker ></mat-datepicker>
+      </mat-form-field>
+    
+      <mat-form-field appearance="fill">
+        <mat-label>Phone</mat-label>
+        <input matInput formControlName="Phone" type="number" />
+      </mat-form-field>
+    
+      <mat-form-field appearance="fill">
+        <mat-label>BossName</mat-label>
+        <input matInput formControlName="bossName" />
+      </mat-form-field>
+    
+      <mat-form-field appearance="fill">
+        <mat-label>WorkPlace</mat-label>
+        <input matInput formControlName="birthPlace" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>StartDayWork</mat-label>
+        <input matInput formControlName="StartDayWork" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>EndDayWork</mat-label>
+        <input matInput formControlName="EndDayWork" />
+      </mat-form-field>
+      
+
+    </form>
+    <button mat-button>
+      Send
+    </button>
+
+</div>
